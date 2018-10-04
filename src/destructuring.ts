@@ -5,7 +5,7 @@
     }
 
     //destructuring argument object into variables
-    function order({name : pizzaName , toppings: pizzaToppings}){
+    function order({name : pizzaName , toppings: pizzaToppings}) {
         console.log(pizzaName,pizzaToppings);
         return {pizzaName, pizzaToppings}
     }
@@ -22,6 +22,21 @@
 
     console.log(first,second,thrid)
 
+    function say(
+        { something }: { something: string }
+      ) {
+        console.log(something)
+      }
     
+      say({something : "Hello"})
+
+    //destructuring argument object into typed variables
+    function orderTwo({name,toppings}:{name:string,toppings:string[]}) {
+        console.log(name,toppings);
+        return {name, toppings}
+    }
+
+    orderTwo(pizza);
+
 
 })();
