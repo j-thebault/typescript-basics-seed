@@ -17,7 +17,7 @@
   class Pizza {
     toppings: string[] = [];
 
-    constructor(private name: string) {
+    constructor(readonly name: string) {
     }
 
     addTopping(topping: string) {
@@ -28,4 +28,5 @@
   const pizza = new Pizza("Pepperoni with class");
   pizza.addTopping('pepperoni');
   console.log(pizza);
+  console.log(pizza.name);
 })();
