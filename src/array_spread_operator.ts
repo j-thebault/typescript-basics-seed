@@ -6,4 +6,11 @@
     const allToppings = [...toppings, ...newToppings]
 
     console.log(allToppings);
+
+    toppings.push('parmesan');
+    toppings[0] = toppings[0].toUpperCase();
+    
+    //allTopping don't get reference to the original array or any objects of the original array
+    //spread operator is like a foreach and add into the new array by copy. 
+    console.log(allToppings);
 })();
