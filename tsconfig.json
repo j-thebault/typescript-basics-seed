@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "locale": "en",
     "target": "es5",
     "module": "commonjs",
     "strict": false,
