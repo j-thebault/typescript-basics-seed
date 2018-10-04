@@ -15,11 +15,9 @@
 
 (function() {
   class Pizza {
-    name: string;
     toppings: string[] = [];
 
-    constructor(name: string) {
-      this.name = name;
+    constructor(private name: string) {
     }
 
     addTopping(topping: string) {
